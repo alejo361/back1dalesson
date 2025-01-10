@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8 p-1">
+            <div class="row realtimeproducts">
+                <h2>PRODUCTOS EN TIEMPO REAL</h2>
+                <div class="products-container-rtp"></div>
+            </div>
+            <div class="row">
+                <span id="error-message"></span>
+            </div>
+        </div>
+        <div class="col-4 p-1">
+            <div class="events">
+                <div class="add">
+                    <h2>Agregar Producto</h2>
+                    <div class="formulario-add">
+                        <input class="form-control" id="add-title" type="text" placeholder="Titulo">
+                        <input class="form-control" id="add-description" type="text" placeholder="Descripcion">
+                        <input class="form-control" id="add-price" type="number" placeholder="Precio">
+                        <input class="form-control" id="add-code" type="text" placeholder="Codigo">
+                        <input class="form-control" id="add-stock" type="number" placeholder="Stock">
+                        <input class="form-control" id="add-category" type="text" placeholder="Categoria">
+                        <button class="form-control btn btn btn-primary" id="button-add">Agregar Nuevo Producto</button>
+                    </div>
+                </div>
+                <div class="update">
+                    <h2>Modificar Producto</h2>
+                    <div class="formulario-update">
+                        <input class="form-control" id="update-id" type="text" placeholder="ID Producto a Modificar">
+                        <input class="form-control" id="update-title" type="text" placeholder="Titulo">
+                        <input class="form-control" id="update-description" type="text" placeholder="Descripcion">
+                        <input class="form-control" id="update-price" type="number" placeholder="Precio">
+                        <input class="form-control" id="update-code" type="text" placeholder="Codigo">
+                        <input class="form-control" id="update-stock" type="number" placeholder="Stock">
+                        <input class="form-control" id="update-category" type="text" placeholder="Categoria">
+                        <button class="form-control btn btn btn-warning" id="button-update">Modificar Producto</button>
+                    </div>
+                </div>
+                <div class="delete">
+                    <h2>Eliminar Producto</h2>
+                    <div class="formulario-delete">
+                        <input class="form-control" id="delete-id" type="text" placeholder="ID Producto a Eliminar">
+                        <button class="form-control btn btn btn-danger" id="button-delete">Eliminar Producto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="./realtimeproducts.js"></script>
