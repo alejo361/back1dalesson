@@ -55,7 +55,7 @@ socketServer.on('connection', async (socket)=>{
             socket.emit('error', error.message);
         }
     })
-    socket.on('delete-product', async(id) => {
+    socket.on('delete-producto', async(id) => {
         try{
             console.log(`Intento borrar id: ${id}`)
             await prodManager.delete(id)
